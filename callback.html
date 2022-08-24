@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>   
+</head>
+<body>
+    <h1>callback functtion</h1>
+    <p>a function that is passed in another function as an arguement and invoked
+         inside the outer function to complete
+        some kind of action or calculation etc.
+        that function is called callback function.....
+    </p>
+    <div id="demo">hii</div>
+    <script>
+        function add(a,b){
+            return a+b;
+        }
+        function addition(add,num1,num2){
+            return add(num1,num2)
+        }
+        var c=addition(add,4,5);
+        console.log(c);
+       // document.getElementById("demo").innerHTML = c;
+       document.getElementById("demo").innerHTML = c;
+    </script>
+</body>
+</html>
